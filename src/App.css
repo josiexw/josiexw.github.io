@@ -8,18 +8,19 @@
   transition: background-image 0.5s ease-in-out; /* Smooth transition */
 }
 
-.map-container {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-}
-
-img {
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -1; /* Ensures the background is behind other content */
 }
 
 .clickable-area {
   position: absolute;
   cursor: pointer;
+  /* Use percentage values for positioning and sizing */
 }

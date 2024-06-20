@@ -23,25 +23,25 @@ function App() {
     >
       <div 
         className="clickable-area" 
-        style={{ top: '0px', left: '200px', width: '180px', height: '100px' }} 
+        style={{ top: '0%', left: '10%', width: '13%', height: '16%' }} 
         onClick={toggleMode}
       >
       </div>
       <div 
         className="clickable-area" 
-        style={{ top: '140px', left: '70px', width: '370px', height: '450px' }} 
+        style={{ top: '19.5%', left: '4%', width: '25%', height: '65%' }} 
         onClick={() => openLink('https://josiexw.github.io/jw-resume.pdf')}
       >
       </div>
       <div 
         className="clickable-area" 
-        style={{ top: '110px', left: '720px', width: '280px', height: '80px' }} 
+        style={{ top: '15%', left: '47%', width: '18%', height: '20%' }} 
         onClick={() => openLink('https://github.com/josiexw')}
       >
       </div>
       <div 
         className="clickable-area" 
-        style={{ top: '110px', left: '1000px', width: '280px', height: '80px' }} 
+        style={{ top: '15%', left: '65%', width: '18%', height: '20%' }} 
         onClick={() => openLink('https://www.linkedin.com/in/josiexw/')}
       >
       </div>
