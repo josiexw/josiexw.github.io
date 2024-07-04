@@ -1,44 +1,46 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Web site created using create-react-app"/><link rel="apple-touch-icon" href="/logo192.png"/><link rel="manifest" href="/manifest.json"/><title>React App</title><script defer="defer" src="/static/js/main.8749a21b.js"></script><link href="/static/css/main.84861e0c.css" rel="stylesheet"></head><body><script>(function() {
-    // Function to load a script
-    function loadScript(src, callback) {
-      var script = document.createElement('script');
-      script.src = src;
-      script.async = true;
-      script.onload = callback;
-      document.head.appendChild(script);
-    }
-  
-    // Load React and ReactDOM if not already loaded
-    if (!window.React || !window.ReactDOM) {
-      loadScript('https://unpkg.com/react/umd/react.production.min.js', function() {
-        loadScript('https://unpkg.com/react-dom/umd/react-dom.production.min.js', function() {
-          loadChatbotWidget();
-        });
-      });
-    } else {
-      loadChatbotWidget();
-    }
-  
-    function loadChatbotWidget() {
-      // Create a script element to load the widget script
-      var script = document.createElement('script');
-      script.src = 'https://josiexw.github.io/chatbot-widget/dist/chatbot-widget.js';
-      script.async = true;
-      script.onload = function() {
-        // Once the script is loaded, initialize the chatbot
-        var chatbotContainer = document.createElement('div');
-        chatbotContainer.id = 'chatbot-container';
-        document.body.appendChild(chatbotContainer);
-  
-        // Assuming your widget exposes a global initialization function
-        if (window.ChatbotWidget) {
-          ReactDOM.render(
-            React.createElement(window.ChatbotWidget.default),
-            document.getElementById('chatbot-container')
-          );
-        }
-      };
-      document.head.appendChild(script);
-    }
-  })();
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Web site created using create-react-app"/><link rel="apple-touch-icon" href="/logo192.png"/><link rel="manifest" href="/manifest.json"/><title>React App</title><script defer="defer" src="/static/js/main.8749a21b.js"></script><link href="/static/css/main.84861e0c.css" rel="stylesheet"></head><body>
+    <script>
+        (function() {
+            // Function to load a script
+            function loadScript(src, callback) {
+              var script = document.createElement('script');
+              script.src = src;
+              script.async = true;
+              script.onload = callback;
+              document.head.appendChild(script);
+            }
+          
+            // Load React and ReactDOM if not already loaded
+            if (!window.React || !window.ReactDOM) {
+              loadScript('https://unpkg.com/react/umd/react.production.min.js', function() {
+                loadScript('https://unpkg.com/react-dom/umd/react-dom.production.min.js', function() {
+                  loadChatbotWidget();
+                });
+              });
+            } else {
+              loadChatbotWidget();
+            }
+          
+            function loadChatbotWidget() {
+              // Create a script element to load the widget script
+              var script = document.createElement('script');
+              script.src = 'https://josiexw.github.io/chatbot-widget/';
+              script.async = true;
+              script.onload = function() {
+                // Once the script is loaded, initialize the chatbot
+                var chatbotContainer = document.createElement('div');
+                chatbotContainer.id = 'chatbot-container';
+                document.body.appendChild(chatbotContainer);
+          
+                // Assuming your widget exposes a global initialization function
+                if (window.ChatbotWidget) {
+                  ReactDOM.render(
+                    React.createElement(window.ChatbotWidget.default),
+                    document.getElementById('chatbot-container')
+                  );
+                }
+              };
+              document.head.appendChild(script);
+            }
+          })();
   </script><div id="root"></div></body></html>
