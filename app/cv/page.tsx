@@ -319,8 +319,8 @@ export default function CVPage() {
                   </ul>
                 </CardContent>
               </Card>
-            </section>
-          </div> */}
+            </section> */}
+          </div>
 
           <div className="space-y-8">
             <section className="space-y-4">
