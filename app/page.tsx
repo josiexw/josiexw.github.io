@@ -84,7 +84,7 @@ export default function Home() {
               <p className="text-muted-foreground">
                 At MIT, I do research on computer vision, specifically pose estimation algorithms for infant locomotion, 
                 at the McGovern Institute for Brain Research. I am the co-founder of the <a href="https://mitappdev.com/" className="underline" target="_blank" rel="noopener noreferrer">app development club at MIT</a>, 
-                where we build web and mobile apps. Outside of academics, I love traveling and trying new cuisines 
+                where we build web and mobile apps. Outside of academics, I love traveling and trying cuisines 
                 from different countries. I also enjoy going to hackathons, teaching, creating visual art, and partaking in thrilling activities.
               </p>
             </div>
