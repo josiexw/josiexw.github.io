@@ -204,7 +204,7 @@ export default function CVPage() {
               </Card>
             </section>
 
-            <section className="space-y-4">
+            {/* <section className="space-y-4">
               <h2 className="text-2xl font-bold">Archive</h2>
               <p>Miscellaneous projects and activities</p>
 
@@ -320,7 +320,7 @@ export default function CVPage() {
                 </CardContent>
               </Card>
             </section>
-          </div>
+          </div> */}
 
           <div className="space-y-8">
             <section className="space-y-4">
@@ -338,11 +338,11 @@ export default function CVPage() {
                     </div>
                     <div>
                       <h3 className="font-medium">Tools</h3>
-                      <p className="text-sm text-muted-foreground">PyTorch, Tensorflow, Pandas, Matplotlib, NumPy, Linux, Docker, MATLAB, ROS2 Humble, Moos-IvP</p>
+                      <p className="text-sm text-muted-foreground">PyTorch, Tensorflow, Linux, Docker, MATLAB, ROS2 Humble, Moos-IvP</p>
                     </div>
                     <div>
                       <h3 className="font-medium">Databases</h3>
-                      <p className="text-sm text-muted-foreground">SQLite, PostgreSQL, MySQL, MongoDB</p>
+                      <p className="text-sm text-muted-foreground">PostgreSQL, MySQL, SQLite, MongoDB</p>
                     </div>
                   </div>
                 </CardContent>

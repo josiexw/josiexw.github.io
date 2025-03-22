@@ -93,11 +93,11 @@ export default function Home() {
               <ul className="grid gap-2 sm:grid-cols-2 md:grid-cols-3">
                 <li className="rounded-lg border p-4">
                   <h4 className="font-medium">Data Analytics</h4>
-                  <p className="text-sm text-muted-foreground">Pandas, Matplotlib, NumPy, MATLAB</p>
+                  <p className="text-sm text-muted-foreground">MATLAB</p>
                 </li>
                 <li className="rounded-lg border p-4">
                   <h4 className="font-medium">Machine Learning</h4>
-                  <p className="text-sm text-muted-foreground">PyTorch, Tensorflow, LangChain</p>
+                  <p className="text-sm text-muted-foreground">PyTorch, Tensorflow</p>
                 </li>
                 <li className="rounded-lg border p-4">
                   <h4 className="font-medium">UI/UX Design</h4>
