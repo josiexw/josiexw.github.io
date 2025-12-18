@@ -25,6 +25,46 @@ export default function ProjectsPage() {
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           <Card className="overflow-hidden">
             <div className="relative aspect-video">
+              <Image
+                src="/civicembed.jpeg?height=200&width=400"
+                alt="Project"
+                fill
+                className="object-cover transition-all hover:scale-105"
+              />
+            </div>
+            <CardHeader>
+              <CardTitle>CivicEmbed</CardTitle>
+              <CardDescription>
+                CivicEmbed is a lightweight method of quantifying
+                geographic similarity via feature-specific embedding spaces.
+                Encoders trained with self-supervised contrastive learning model
+                topography, water proximity, vegetation
+                coverage, and road networks. We implemented a FAISS-backed retrieval
+                system and interactive interface at the scale of Switzerland,
+                providing a foundation for data-driven decisions in architecture,
+                transit design, and land-use planning.
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="flex flex-wrap gap-2">
+                <Badge variant="secondary">PyTorch</Badge>
+                <Badge variant="secondary">Contrastive learning</Badge>
+                <Badge variant="secondary">FAISS</Badge>
+                <Badge variant="secondary">Geospatial data</Badge>
+              </div>
+            </CardContent>
+            <CardFooter className="flex justify-between">
+              <Button variant="outline" size="sm" asChild>
+                <Link href="https://github.com/josiexw/civicembed" target="_blank" rel="noopener noreferrer">
+                  <Github className="mr-2 h-4 w-4" />
+                  Code
+                </Link>
+              </Button>
+            </CardFooter>
+          </Card>
+
+          <Card className="overflow-hidden">
+            <div className="relative aspect-video">
               <iframe
                 src="https://www.youtube.com/embed/wIJV6qguReI"
                 allowFullScreen
@@ -63,7 +103,7 @@ export default function ProjectsPage() {
             <div className="relative aspect-video">
               <Image
                 src="/hackprinceton.png?height=200&width=400"
-                alt="Project 2"
+                alt="Project"
                 fill
                 className="object-cover transition-all hover:scale-105"
               />
@@ -132,7 +172,7 @@ export default function ProjectsPage() {
             <div className="relative aspect-video">
               <Image
                 src="/hackmit.png?height=200&width=400"
-                alt="Project 4"
+                alt="Project"
                 fill
                 className="object-cover transition-all hover:scale-105"
               />
@@ -165,7 +205,7 @@ export default function ProjectsPage() {
             <div className="relative aspect-video">
               <Image
                 src="/fullhouse.png?height=200&width=400"
-                alt="Project 5"
+                alt="Project"
                 fill
                 className="object-cover transition-all hover:scale-105"
               />

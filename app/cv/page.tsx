@@ -42,18 +42,46 @@ export default function CVPage() {
                   <ul className="list-disc pl-5 space-y-2">
                     <li>Optimized parameters in an infant locomotion model using gradient descent in PyTorch to investigate 
                       whether infant locomotion is destination-driven or peregration-driven.</li>
-                    <li>Analyzed and modeled infant location, velocity, and cumulative area explored using Pandas and 
-                      Matplotlib. Fitted data to logarithmic and logistic curves with SciPy to compare infant movement 
-                      patterns, providing insights into behavioral responses.</li>
-                    <li>Submitted a paper exploring spatial and temporal coordination in task-irrelevant variability 
+                    <li>Published and presented a paper exploring spatial and temporal coordination in task-irrelevant variability 
                       during locomotor development to <a href="https://icdl2025.fel.cvut.cz/" className="underline" target="_blank" rel="noopener noreferrer">IEEE ICDL</a>.</li>
-                    <li>Building a computer vision pipeline for extracting infant movement data from 2D videos 
-                      using pose estimation algorithms. Validating the pipeline with ground truth infant locomotion parameters.
+                    <li>Built a computer vision pipeline with ViTPose and Deep Patch Visual Odometry/SLAM to extract the 3D 
+                      COCO pose estimation in world reference from a 2D video and validated on ground truth from motion capture. 
+                      Exploring if computer vision models can detect early markers of neurodevelopmental diseases in infants.
+                    </li>
+                    <li>Analyzed infant locomotion parameters to investigate gait development and modeling developmental trajectories 
+                      in MuJoCo using deep reinforcement learning, linking biomechanical variability to learning objectives in 
+                      embodied agents.
                     </li>
                   </ul>
                   <div className="flex flex-wrap gap-2 mt-4">
                     <Badge variant="secondary">Computer vision</Badge>
                     <Badge variant="secondary">Data analytics</Badge>
+                    <Badge variant="secondary">PyTorch</Badge>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <div className="flex items-start justify-between">
+                    <div>
+                      <CardTitle>Researcher</CardTitle>
+                      <CardDescription>EPFL</CardDescription>
+                    </div>
+                    <span className="text-sm text-muted-foreground">June 2025 - August 2025</span>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <ul className="list-disc pl-5 space-y-2">
+                    <li>Built a geospatial encoder using ResNet and S2 cell hierarchies to produce
+                      terrain embeddings for a geographically-aware model.</li>
+                    <li>Integrated multilingual BERT as a text encoder with the ResNet geospatial encoder to 
+                      form a multimodal embedding space. Trained using contrastive learning to align textual metadata 
+                      and terrain contexts, capturing topical and geographic similarity across datasets. </li>
+                  </ul>
+                  <div className="flex flex-wrap gap-2 mt-4">
+                    <Badge variant="secondary">Contrastive learning</Badge>
+                    <Badge variant="secondary">Geospatial data</Badge>
                     <Badge variant="secondary">PyTorch</Badge>
                   </div>
                 </CardContent>
@@ -91,6 +119,33 @@ export default function CVPage() {
                 <CardHeader>
                   <div className="flex items-start justify-between">
                     <div>
+                      <CardTitle>Autonomy Programmer</CardTitle>
+                      <CardDescription>MIT Autonomous Robotics Team</CardDescription>
+                    </div>
+                    <span className="text-sm text-muted-foreground">September 2023 - December 2024</span>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <ul className="list-disc pl-5 space-y-2">
+                    <li>Trained a YOLOv8 model to detect buoys and simulated LiDAR scanning 
+                      via Python in ROS2 Humble to improve navigational accuracy for our 
+                      autonomous surface vehicle.</li>
+                    <li>Recorded and transferred acoustic tracking data to MOOS-IvP via Linux, 
+                      facilitating precise localization of the transmitter with respect to 
+                      the global frame.</li>
+                  </ul>
+                  <div className="flex flex-wrap gap-2 mt-4">
+                    <Badge variant="secondary">ROS2 Humble</Badge>
+                    <Badge variant="secondary">Moos-IvP</Badge>
+                    <Badge variant="secondary">Linux</Badge>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <div className="flex items-start justify-between">
+                    <div>
                       <CardTitle>AI/ML Engineer</CardTitle>
                       <CardDescription>Acoris</CardDescription>
                     </div>
@@ -118,61 +173,90 @@ export default function CVPage() {
                   </div>
                 </CardContent>
               </Card>
+
+              <Card>
+                <CardHeader>
+                  <div className="flex items-start justify-between">
+                    <div>
+                      <CardTitle>Researcher</CardTitle>
+                      <CardDescription>Tenenbaum Computational and Cognitive Science Lab</CardDescription>
+                    </div>
+                    <span className="text-sm text-muted-foreground">September 2023 - May 2024</span>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <ul className="list-disc pl-5 space-y-2">
+                    <li>Developed a Bayesian inference model using <a href="https://www.gen.dev/" className="underline" target="_blank" rel="noopener noreferrer">Gen</a> in Julia to perform hierarchical 
+                      logistic regression on primate pattern learning data, inferring parameters via 
+                      Metropolis-Hastings sampling that calculate the probability of primates learning 
+                      spatial patterns.</li>
+                    <li>Analyzed and modeled spatiotemporal pattern recognition in children and primates 
+                      with Pandas and Matplotlib to identify indicators of learning</li>
+                  </ul>
+                  <div className="flex flex-wrap gap-2 mt-4">
+                    <Badge variant="secondary">Bayesian inference</Badge>
+                    <Badge variant="secondary">Data analytics</Badge>
+                    <Badge variant="secondary">Julia</Badge>
+                  </div>
+                </CardContent>
+              </Card>
             </section>
 
-            <Card>
-              <CardHeader>
-                <div className="flex items-start justify-between">
-                  <div>
-                    <CardTitle>Autonomy Programmer</CardTitle>
-                    <CardDescription>MIT Autonomous Robotics Team</CardDescription>
-                  </div>
-                  <span className="text-sm text-muted-foreground">September 2023 - December 2024</span>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <ul className="list-disc pl-5 space-y-2">
-                  <li>Trained a YOLOv8 model to detect buoys and simulated LiDAR scanning 
-                    via Python in ROS2 Humble to improve navigational accuracy for our 
-                    autonomous surface vehicle.</li>
-                  <li>Recorded and transferred acoustic tracking data to MOOS-IvP via Linux, 
-                    facilitating precise localization of the transmitter with respect to 
-                    the global frame.</li>
-                </ul>
-                <div className="flex flex-wrap gap-2 mt-4">
-                  <Badge variant="secondary">ROS2 Humble</Badge>
-                  <Badge variant="secondary">Moos-IvP</Badge>
-                  <Badge variant="secondary">Linux</Badge>
-                </div>
-              </CardContent>
-            </Card>
+            <section className="space-y-4">
+              <h2 className="text-2xl font-bold">Publications & Submitted Work</h2>
 
-            <Card>
-              <CardHeader>
-                <div className="flex items-start justify-between">
-                  <div>
-                    <CardTitle>Researcher</CardTitle>
-                    <CardDescription>Tenenbaum Computational and Cognitive Science Lab</CardDescription>
+              <Card>
+                <CardHeader>
+                  <div className="flex items-start justify-between">
+                    <div>
+                      <CardTitle>Dissociation between temporal and spatial variability in locomotor development</CardTitle>
+                      <CardDescription>IEEE International Conference on Development and Learning 2025</CardDescription>
+                    </div>
+                    <span className="text-sm text-muted-foreground">First Author</span>
                   </div>
-                  <span className="text-sm text-muted-foreground">September 2023 - May 2024</span>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <ul className="list-disc pl-5 space-y-2">
-                  <li>Developed a Bayesian inference model using <a href="https://www.gen.dev/" className="underline" target="_blank" rel="noopener noreferrer">Gen</a> in Julia to perform hierarchical 
-                    logistic regression on primate pattern learning data, inferring parameters via 
-                    Metropolis-Hastings sampling that calculate the probability of primates learning 
-                    spatial patterns.</li>
-                  <li>Analyzed and modeled spatiotemporal pattern recognition in children and primates 
-                    with Pandas and Matplotlib to identify indicators of learning</li>
-                </ul>
-                <div className="flex flex-wrap gap-2 mt-4">
-                  <Badge variant="secondary">Bayesian inference</Badge>
-                  <Badge variant="secondary">Data analytics</Badge>
-                  <Badge variant="secondary">Julia</Badge>
-                </div>
-              </CardContent>
-            </Card>
+                </CardHeader>
+                <CardContent>
+                  <p>Paper: <a href="https://ieeexplore.ieee.org/abstract/document/11204398" className="underline" target="_blank" rel="noopener noreferrer">https://ieeexplore.ieee.org/abstract/document/11204398</a></p>
+                  <p>Oral presentation: <a href="https://youtu.be/rxdMzkQfEuA?si=B7nSfDOuQrUvwD0A" className="underline" target="_blank" rel="noopener noreferrer">https://youtu.be/rxdMzkQfEuA?si=B7nSfDOuQrUvwD0A</a></p>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <div className="flex items-start justify-between">
+                    <div>
+                      <CardTitle>Validating human pose estimation for infant gait assessment</CardTitle>
+                      <CardDescription>Society for Neuroscience 2025</CardDescription>
+                    </div>
+                    <span className="text-sm text-muted-foreground">First Author</span>
+                  </div>
+                </CardHeader>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <div className="flex items-start justify-between">
+                    <div>
+                      <CardTitle>Model-free reinforcement learning captures early but not late coordination patterns in motor development</CardTitle>
+                      <CardDescription>Neural Control of Movement 2026 (Under review)</CardDescription>
+                    </div>
+                    <span className="text-sm text-muted-foreground">First Author</span>
+                  </div>
+                </CardHeader>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <div className="flex items-start justify-between">
+                    <div>
+                      <CardTitle>World-grounded 3D pose estimation for markerless motion analysis in children</CardTitle>
+                      <CardDescription>World Congress of Biomechanics 2026 (Under review)</CardDescription>
+                    </div>
+                    <span className="text-sm text-muted-foreground">First Author</span>
+                  </div>
+                </CardHeader>
+              </Card>
+            </section>
 
             <section className="space-y-4">
               <h2 className="text-2xl font-bold">Education</h2>
@@ -364,7 +448,7 @@ export default function CVPage() {
                     </div>
                     <div className="flex justify-between">
                       <span>French</span>
-                      <span className="text-muted-foreground">Intermediate</span>
+                      <span className="text-muted-foreground">B2</span>
                     </div>
                   </div>
                 </CardContent>
