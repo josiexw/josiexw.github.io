@@ -268,7 +268,7 @@ export default function CVPage() {
                       <CardTitle>B.S. Computer Science and Engineering</CardTitle>
                       <CardDescription>Massachusetts Institute of Technology</CardDescription>
                     </div>
-                    <span className="text-sm text-muted-foreground">September 2023 - May 2027</span>
+                    <span className="text-sm text-muted-foreground">September 2023 - May 2026</span>
                   </div>
                 </CardHeader>
                 <CardContent>
