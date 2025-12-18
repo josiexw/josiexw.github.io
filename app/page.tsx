@@ -38,7 +38,7 @@ export default function Home() {
                   Hello, I'm Josephine Wang
                 </h1>
                 <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                  A sophomore studying 6-3 (Computer Science and Engineering) at MIT.
+                  A sophomore studying 6-4 at MIT.
                 </p>
               </div>
               <div className="flex gap-4">
